@@ -1,6 +1,5 @@
 public class Main {
     static int a=0;
-    static int b=0;
     static int count = 0;
         public static void main(String[] args) {
             int[] arr = generateRandomArray();
@@ -23,7 +22,6 @@ public class Main {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = random.nextInt(100_000) + 100_000;
             a = arr[i];
-            min=a;
             if (min > a) {
                 min = a;
             }
