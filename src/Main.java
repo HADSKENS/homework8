@@ -1,21 +1,21 @@
-import java.util.Random;
-
 public class Main {
-    int[] arr = new int[30];
+    static int a=0;
+    static int b=0;
     static int count = 0;
-    static int a = 0;
-
-    public static <string> void main(String[] args) {
-        //Задание 1
-        System.out.println("Задание 1");
-        java.util.Random random = new java.util.Random();
-        int[] arr = new int[30];
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = random.nextInt(100_000) + 100_000;
-            a = arr[i];
-            count += a;
+        public static void main(String[] args) {
+            int[] arr = generateRandomArray();
         }
-        System.out.println("Сумма трат за месяц " + count + " рублей");
+        //Задание 1
+        public static int[] generateRandomArray() {
+            System.out.println("Задание 1");
+            java.util.Random random = new java.util.Random();
+            int[] arr = new int[30];
+            a=0;
+            for (int i = 0; i < arr.length; i++) {
+                arr[i] = random.nextInt(100_000) + 100_000;
+                a += arr[i];
+            }
+        System.out.println("Сумма трат за месяц " + a + " рублей");
         //Задание 2
         System.out.println("Задание 2");
         int max = 0;
@@ -50,5 +50,6 @@ public class Main {
         for (e=10; e>=0; e--){
             System.out.print(y[e]);
         }
-    }
+            return arr;
+        }
 }
