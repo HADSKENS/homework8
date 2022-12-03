@@ -2,10 +2,6 @@ public class Main {
     static int a=0;
     static int count = 0;
         public static void main(String[] args) {
-            int[] arr = generateRandomArray();
-        }
-        //Задание 1
-        public static int[] generateRandomArray() {
             System.out.println("Задание 1");
             java.util.Random random = new java.util.Random();
             int[] arr = new int[30];
@@ -48,6 +44,5 @@ public class Main {
         for (e=10; e>=0; e--){
             System.out.print(y[e]);
         }
-            return arr;
         }
 }
